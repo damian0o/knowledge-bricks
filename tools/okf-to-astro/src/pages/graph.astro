@@ -17,6 +17,7 @@ function withBase(p) {
         --bg: #0f1115;
         --panel: #171a21;
         --fg: #e6e8ec;
+        --muted: #9aa3b2;
         --border: #262b35;
         --accent: #6ea8fe;
       }
@@ -30,17 +31,28 @@ function withBase(p) {
       }
       header.site .brand { font-weight: 700; }
       header.site nav a { margin-right: 1rem; text-decoration: none; color: var(--accent); }
+      header.site .hint { margin-left: auto; color: var(--muted); font-size: 0.78rem; }
       #cy { position: absolute; top: 56px; left: 0; right: 0; bottom: 0; }
-      #legend {
+      #panel {
         position: absolute; top: 72px; right: 16px; z-index: 20;
-        background: rgba(23,26,33,0.92); border: 1px solid var(--border);
-        border-radius: 8px; padding: 0.75rem 1rem; font-size: 0.78rem; max-width: 240px;
+        background: rgba(23,26,33,0.94); border: 1px solid var(--border);
+        border-radius: 10px; padding: 0.85rem 1rem; font-size: 0.8rem; width: 220px;
+        max-height: calc(100% - 96px); overflow: auto;
       }
-      #legend h4 { margin: 0 0 0.4rem; font-size: 0.8rem; }
-      #legend .row { display: flex; align-items: center; gap: 0.5rem; margin: 0.2rem 0; }
-      #legend .dot { width: 12px; height: 12px; border-radius: 50%; flex: none; }
-      #legend .line { width: 22px; height: 0; flex: none; }
-      #legend .section { margin-top: 0.6rem; color: #9aa3b2; text-transform: uppercase; font-size: 0.66rem; letter-spacing: 0.05em; }
+      #panel h4 { margin: 0.7rem 0 0.35rem; font-size: 0.72rem; color: var(--muted);
+        text-transform: uppercase; letter-spacing: 0.05em; }
+      #panel h4:first-child { margin-top: 0; }
+      #panel label { display: flex; align-items: center; gap: 0.5rem; margin: 0.22rem 0; cursor: pointer; }
+      #panel input[type="search"] { width: 100%; padding: 0.35rem 0.5rem; margin-bottom: 0.4rem;
+        background: #0f1115; color: var(--fg); border: 1px solid var(--border); border-radius: 6px; }
+      #panel .row { display: flex; align-items: center; gap: 0.5rem; margin: 0.2rem 0; cursor: pointer; }
+      #panel .row.off { opacity: 0.4; }
+      #panel .dot { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+      #panel .line { width: 22px; height: 0; flex: none; }
+      #panel button { margin-top: 0.5rem; width: 100%; padding: 0.4rem; cursor: pointer;
+        background: #0f1115; color: var(--fg); border: 1px solid var(--border); border-radius: 6px; }
+      #panel button:hover { border-color: var(--accent); }
+      #count { color: var(--muted); font-size: 0.72rem; margin-top: 0.5rem; }
     </style>
   </head>
   <body>
@@ -50,36 +62,60 @@ function withBase(p) {
         <a href={withBase("/")}>Home</a>
         <a href={withBase("/graph/")}>Graph</a>
       </nav>
+      <span class="hint">hover a node to focus its links · click to open · scroll to zoom</span>
     </header>
     <div id="cy" data-graph-url={withBase("/graph.json")} data-base={baseSlash}></div>
-    <div id="legend"></div>
+    <div id="panel">
+      <input type="search" id="search" placeholder="Search a thinker…" autocomplete="off" />
+      <h4>Edge types</h4>
+      <label><input type="checkbox" data-kind="grounding" checked /> <span class="line" style="border-top:3px solid #ffb454"></span> grounding</label>
+      <label><input type="checkbox" data-kind="influence" checked /> <span class="line" style="border-top:1.5px solid #6b7585"></span> influence</label>
+      <label><input type="checkbox" data-kind="structural" checked /> <span class="line" style="border-top:2px dashed #06d6a0"></span> structural</label>
+      <h4>Display</h4>
+      <label><input type="checkbox" id="alllabels" /> all labels</label>
+      <button id="fit">Reset view</button>
+      <h4>Clusters <span style="text-transform:none;color:var(--muted)">(click to toggle)</span></h4>
+      <div id="clusters"></div>
+      <div id="count"></div>
+    </div>
 
     <script>
       import cytoscape from "cytoscape";
+      import fcose from "cytoscape-fcose";
+      cytoscape.use(fcose);
+
       const cyEl = document.getElementById("cy");
       const graphUrl = cyEl.dataset.graphUrl;
       const baseSlash = cyEl.dataset.base;
+
+      const clusterColors = {
+        eos: "#ff6b6b",
+        ancient: "#ffd166",
+        "medieval-rationalist": "#06d6a0",
+        "empiricism-kant": "#118ab2",
+        "nineteenth-twentieth": "#9b5de5",
+        poststructuralist: "#f15bb5",
+        "physics-of-reality": "#00bbf9",
+      };
+      const fallback = "#8d99ae";
+      const colorFor = (c) => clusterColors[c] || fallback;
+
       (async () => {
         const res = await fetch(graphUrl);
         const graph = await res.json();
 
-        // Distinct palette per cluster (incl. eos).
-        const clusterColors = {
-          eos: "#ff6b6b",
-          ancient: "#ffd166",
-          "medieval-rationalist": "#06d6a0",
-          "empiricism-kant": "#118ab2",
-          "nineteenth-twentieth": "#9b5de5",
-          poststructuralist: "#f15bb5",
-          "physics-of-reality": "#00bbf9",
-        };
-        const fallback = "#8d99ae";
-        function colorFor(cluster) {
-          return clusterColors[cluster] || fallback;
-        }
+        // Degree → node size and default-label selection.
+        const deg = {};
+        graph.nodes.forEach((n) => (deg[n.id] = 0));
+        graph.edges.forEach((e) => {
+          if (deg[e.source] != null) deg[e.source]++;
+          if (deg[e.target] != null) deg[e.target]++;
+        });
+        const HUB = 7; // label nodes with degree >= HUB by default
 
         const elements = [];
         for (const n of graph.nodes) {
+          const d = deg[n.id] || 0;
           elements.push({
             data: {
               id: n.id,
@@ -87,6 +123,8 @@ function withBase(p) {
               url: n.url,
               cluster: n.cluster,
               color: colorFor(n.cluster),
+              size: 14 + Math.min(d, 26) * 1.15,
+              hub: d >= HUB ? 1 : 0,
             },
           });
         }
@@ -102,88 +140,135 @@ function withBase(p) {
         }
 
         const cy = cytoscape({
-          container: document.getElementById("cy"),
+          container: cyEl,
           elements,
+          wheelSensitivity: 0.25,
           style: [
             {
               selector: "node",
               style: {
                 "background-color": "data(color)",
-                label: "data(label)",
+                width: "data(size)",
+                height: "data(size)",
+                label: "",
                 color: "#e6e8ec",
-                "font-size": "8px",
+                "font-size": "9px",
                 "text-wrap": "wrap",
-                "text-max-width": "90px",
+                "text-max-width": "100px",
                 "text-valign": "bottom",
                 "text-halign": "center",
-                width: 18,
-                height: 18,
+                "text-margin-y": 2,
+                "text-outline-color": "#0f1115",
+                "text-outline-width": 2,
+                "min-zoomed-font-size": 6,
               },
             },
+            { selector: "node[hub = 1]", style: { label: "data(label)" } },
+            { selector: "node.lbl", style: { label: "data(label)" } },
             {
               selector: "edge",
               style: {
-                width: 1.2,
-                "line-color": "#3a4250",
+                width: 1,
+                "line-color": "#4a5566",
                 "curve-style": "bezier",
                 "target-arrow-shape": "triangle",
-                "target-arrow-color": "#3a4250",
-                "arrow-scale": 0.7,
-                opacity: 0.7,
+                "target-arrow-color": "#4a5566",
+                "arrow-scale": 0.6,
+                opacity: 0.3,
               },
             },
             {
               selector: 'edge[kind = "grounding"]',
-              style: {
-                width: 3,
-                "line-color": "#ffb454",
-                "target-arrow-color": "#ffb454",
-                opacity: 1,
-              },
+              style: { width: 3, "line-color": "#ffb454", "target-arrow-color": "#ffb454", opacity: 0.95 },
             },
             {
               selector: 'edge[kind = "structural"]',
-              style: {
-                "line-style": "dashed",
-                "line-color": "#06d6a0",
-                "target-arrow-color": "#06d6a0",
-              },
+              style: { "line-style": "dashed", "line-color": "#06d6a0", "target-arrow-color": "#06d6a0", opacity: 0.45 },
             },
-            {
-              selector: "node:selected",
-              style: { "border-width": 3, "border-color": "#ffffff" },
-            },
+            { selector: ".faded", style: { opacity: 0.06, "text-opacity": 0 } },
+            { selector: "node.hl", style: { label: "data(label)", "border-width": 2, "border-color": "#ffffff", "z-index": 99 } },
+            { selector: "edge.hl", style: { opacity: 1, width: 2.4, "z-index": 99 } },
+            { selector: ".hidden", style: { display: "none" } },
           ],
           layout: {
-            name: "cose",
+            name: "fcose",
+            quality: "proof",
             animate: false,
-            nodeRepulsion: 8000,
-            idealEdgeLength: 90,
-            gravity: 0.3,
-            padding: 30,
+            randomize: true,
+            packComponents: true,
+            nodeSeparation: 130,
+            nodeRepulsion: 9000,
+            idealEdgeLength: (e) => (e.data("kind") === "grounding" ? 70 : 120),
+            gravity: 0.25,
+            padding: 40,
           },
         });
 
+        // Neighborhood focus on hover.
+        cy.on("mouseover", "node", (evt) => {
+          const n = evt.target;
+          const nh = n.closedNeighborhood();
+          cy.elements().addClass("faded");
+          nh.removeClass("faded");
+          nh.nodes().addClass("hl");
+          nh.edges().addClass("hl");
+        });
+        cy.on("mouseout", "node", () => cy.elements().removeClass("faded hl"));
+
+        // Click to open the brick page.
         cy.on("tap", "node", (evt) => {
           const url = evt.target.data("url");
-          if (url) {
-            const b = baseSlash;
-            window.location.href = b + url.replace(/^\//, "");
-          }
+          if (url) window.location.href = baseSlash + url.replace(/^\//, "");
         });
 
-        // Build legend.
-        const legend = document.getElementById("legend");
-        const usedClusters = [...new Set(graph.nodes.map((n) => n.cluster))].sort();
-        let html = "<h4>Clusters</h4>";
-        for (const c of usedClusters) {
-          html += `<div class="row"><span class="dot" style="background:${colorFor(c)}"></span>${c}</div>`;
+        // Edge-type toggles.
+        document.querySelectorAll('#panel input[data-kind]').forEach((cb) => {
+          cb.addEventListener("change", () => {
+            cy.edges(`[kind = "${cb.dataset.kind}"]`).toggleClass("hidden", !cb.checked);
+          });
+        });
+
+        // All-labels toggle.
+        document.getElementById("alllabels").addEventListener("change", (e) => {
+          cy.nodes().toggleClass("lbl", e.target.checked);
+        });
+
+        // Reset view.
+        document.getElementById("fit").addEventListener("click", () => cy.fit(undefined, 40));
+
+        // Search → focus matching node.
+        document.getElementById("search").addEventListener("input", (e) => {
+          const q = e.target.value.trim().toLowerCase();
+          cy.elements().removeClass("faded hl");
+          if (!q) return;
+          const match = cy.nodes().filter((n) => n.data("label").toLowerCase().includes(q));
+          if (match.length === 0) return;
+          const nh = match.closedNeighborhood();
+          cy.elements().addClass("faded");
+          nh.removeClass("faded");
+          match.addClass("hl");
+          cy.animate({ fit: { eles: nh, padding: 80 }, duration: 300 });
+        });
+
+        // Cluster legend + click-to-toggle visibility.
+        const clustersEl = document.getElementById("clusters");
+        const used = [...new Set(graph.nodes.map((n) => n.cluster))].sort();
+        const hiddenClusters = new Set();
+        for (const c of used) {
+          const row = document.createElement("div");
+          row.className = "row";
+          row.innerHTML = `<span class="dot" style="background:${colorFor(c)}"></span>${c}`;
+          row.addEventListener("click", () => {
+            const off = hiddenClusters.has(c);
+            if (off) hiddenClusters.delete(c);
+            else hiddenClusters.add(c);
+            row.classList.toggle("off", !off);
+            cy.nodes(`[cluster = "${c}"]`).toggleClass("hidden", !off);
+          });
+          clustersEl.appendChild(row);
         }
-        html += '<div class="section">Edge kinds</div>';
-        html += '<div class="row"><span class="line" style="border-top:3px solid #ffb454"></span>grounding</div>';
-        html += '<div class="row"><span class="line" style="border-top:2px dashed #06d6a0"></span>structural</div>';
-        html += '<div class="row"><span class="line" style="border-top:1.2px solid #3a4250"></span>influence</div>';
-        legend.innerHTML = html;
+
+        document.getElementById("count").textContent = `${graph.nodes.length} concepts · ${graph.edges.length} links`;
       })();
     </script>
   </body>

@@ -12,6 +12,7 @@
   "dependencies": {
     "astro": "^5.0.0",
     "cytoscape": "^3.30.0",
+    "cytoscape-fcose": "^2.2.0",
     "gray-matter": "^4.0.3",
     "unist-util-visit": "^5.0.0"
   }
