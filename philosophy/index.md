@@ -21,3 +21,6 @@ synthesis. Seven of these thinkers ground the [EOS operators](/eos/index.md).
 
 ## Physics of Reality
 * [Physics of reality](/philosophy/physics-of-reality/index.md) - Newton, Einstein, Bohr, Heisenberg, Schrödinger, Everett, Bohm, Bell, and the Measurement Problem
+
+## Cross-Cultural & Non-Western
+* [Cross-cultural](/philosophy/cross-cultural/index.md) - Dependent Origination *(grounds O4)*, Nāgārjuna *(grounds the no-fixed-grounding axiom)*, Śaṅkara (Advaita Vedānta), Laozi, Zhuangzi

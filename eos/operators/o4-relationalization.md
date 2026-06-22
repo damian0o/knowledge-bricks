@@ -20,7 +20,7 @@ Map dependencies, couplings, data flows, and control flows. A bugfix is never ju
 
 ## Philosophical grounding
 
-Grounded in [Quine](/philosophy/nineteenth-twentieth/quine.md): epistemic holism — no belief exists in isolation; changing one concept propagates through the whole web. Also grounded in [Latour](/philosophy/poststructuralist/latour.md): knowledge is a network of human and non-human actors (code, CI, wiki are equal nodes with their own agency).
+Grounded in [Quine](/philosophy/nineteenth-twentieth/quine.md): epistemic holism — no belief exists in isolation; changing one concept propagates through the whole web. Also grounded in [Latour](/philosophy/poststructuralist/latour.md): knowledge is a network of human and non-human actors (code, CI, wiki are equal nodes with their own agency). The same relational ontology appears ~2,000 years earlier in Buddhist [dependent origination](/philosophy/cross-cultural/dependent-origination.md): nothing exists in isolation.
 
 ## Composition rules
 

@@ -1,5 +1,10 @@
 # Change Log
 
+## 2026-06-22
+
+* **Creation** — Added a `philosophy/cross-cultural/` cluster (Proposal A): Nāgārjuna (śūnyatā), Pratītyasamutpāda (dependent origination), Śaṅkara (Advaita Vedānta), Laozi, Zhuangzi — non-Western conceptions of reality.
+* **Update** — Wired cross-cultural grounding edges: Nāgārjuna ⟷ the no-fixed-grounding axiom, dependent origination ⟷ O4_RELATIONALIZATION; plus cross-era resonance links (Nāgārjuna↔Derrida/Sextus, Zhuangzi↔Heraclitus/Whitehead, Advaita↔Plato/Berkeley/Plotinus).
+
 ## 2026-06-21
 
 * **Creation** — Initialized the `knowledge-bricks` OKF v0.1 bundle.

@@ -19,3 +19,7 @@ This is **not** relativism. It means **local stability is constructed, not inher
 - §1.1 Context over Local Optimization — global coherence as a constructed precondition.
 - §14.3 — [O1_FOUNDATION](/eos/operators/o1-foundation.md) must always precede [O5_DE_REFERENTIALIZATION](/eos/operators/o5-de-referentialization.md).
 - Companion axioms: [Meaning emerges from transformations](/eos/axioms/meaning-from-transformation.md), [No privileged reference system exists](/eos/axioms/no-privileged-reference.md).
+
+## Historical resonance
+
+This axiom is not new. [Nāgārjuna](/philosophy/cross-cultural/nagarjuna.md)'s śūnyatā (~150 CE) — that nothing has *svabhāva*, an intrinsic essence — states it some 1,850 years earlier: stability is conventional and constructed, never inherent.
