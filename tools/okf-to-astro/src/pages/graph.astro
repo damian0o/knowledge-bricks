@@ -51,11 +51,15 @@ function withBase(p) {
         <a href={withBase("/graph/")}>Graph</a>
       </nav>
     </header>
-    <div id="cy"></div>
+    <div id="cy" data-graph-url={withBase("/graph.json")} data-base={baseSlash}></div>
     <div id="legend"></div>
 
-    <script define:vars={{ graphUrl: withBase("/graph.json"), baseSlash }}>
-      import("cytoscape").then(async ({ default: cytoscape }) => {
+    <script>
+      import cytoscape from "cytoscape";
+      const cyEl = document.getElementById("cy");
+      const graphUrl = cyEl.dataset.graphUrl;
+      const baseSlash = cyEl.dataset.base;
+      (async () => {
         const res = await fetch(graphUrl);
         const graph = await res.json();
 
@@ -180,7 +184,7 @@ function withBase(p) {
         html += '<div class="row"><span class="line" style="border-top:2px dashed #06d6a0"></span>structural</div>';
         html += '<div class="row"><span class="line" style="border-top:1.2px solid #3a4250"></span>influence</div>';
         legend.innerHTML = html;
-      });
+      })();
     </script>
   </body>
 </html>
