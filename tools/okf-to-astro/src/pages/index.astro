@@ -1,0 +1,49 @@
+---
+import { getCollection, render } from "astro:content";
+import Brick from "../layouts/Brick.astro";
+import graph from "../data/graph.json";
+
+const entries = await getCollection("bricks");
+const root = entries.find((e) => e.id === "index");
+
+let Content = null;
+let fm = {};
+if (root) {
+  const rendered = await render(root);
+  Content = rendered.Content;
+  fm = root.data || {};
+}
+
+const base = import.meta.env.BASE_URL;
+function withBase(p) {
+  const b = base.endsWith("/") ? base : base + "/";
+  return b + p.replace(/^\//, "");
+}
+
+// Cluster summary from graph nodes.
+const clusters = new Map();
+for (const n of graph.nodes) {
+  if (!clusters.has(n.cluster)) clusters.set(n.cluster, []);
+  clusters.get(n.cluster).push(n);
+}
+const clusterList = [...clusters.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+---
+
+<Brick
+  id="index"
+  title={fm.title || "knowledge-bricks — the EOS Knowledge Base"}
+  isConcept={false}
+>
+  {Content && <Content />}
+
+  <h2>Clusters</h2>
+  <ul>
+    {clusterList.map(([name, nodes]) => (
+      <li><strong>{name}</strong> — {nodes.length} concepts</li>
+    ))}
+  </ul>
+
+  <p>
+    Explore the full typed knowledge graph: <a href={withBase("/graph/")}>open the graph →</a>
+  </p>
+</Brick>

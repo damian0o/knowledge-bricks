@@ -1,0 +1,174 @@
+---
+import graph from "../data/graph.json";
+
+const base = import.meta.env.BASE_URL;
+function withBase(p) {
+  const b = base.endsWith("/") ? base : base + "/";
+  return b + p.replace(/^\//, "");
+}
+
+const {
+  id,
+  title,
+  type,
+  tags = [],
+  description,
+  isConcept = true,
+} = Astro.props;
+
+const nodesById = new Map(graph.nodes.map((n) => [n.id, n]));
+
+// Backlinks: nodes whose edges target this id.
+const backlinks = isConcept
+  ? graph.edges
+      .filter((e) => e.target === id)
+      .map((e) => nodesById.get(e.source))
+      .filter(Boolean)
+  : [];
+
+// Grounding: grounding-kind edges touching this id.
+const groundingNodes = isConcept
+  ? graph.edges
+      .filter((e) => e.kind === "grounding" && (e.source === id || e.target === id))
+      .map((e) => nodesById.get(e.source === id ? e.target : e.source))
+      .filter(Boolean)
+  : [];
+
+// de-dup helper
+function uniqById(arr) {
+  const seen = new Set();
+  const out = [];
+  for (const n of arr) {
+    if (n && !seen.has(n.id)) {
+      seen.add(n.id);
+      out.push(n);
+    }
+  }
+  return out;
+}
+const backlinksU = uniqById(backlinks);
+const groundingU = uniqById(groundingNodes);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <style>
+      :root {
+        --bg: #0f1115;
+        --panel: #171a21;
+        --fg: #e6e8ec;
+        --muted: #9aa3b2;
+        --accent: #6ea8fe;
+        --grounding: #ffb454;
+        --border: #262b35;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+      }
+      a { color: var(--accent); }
+      header.site {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        padding: 0.75rem 1.5rem;
+        border-bottom: 1px solid var(--border);
+        background: var(--panel);
+        position: sticky;
+        top: 0;
+      }
+      header.site .brand { font-weight: 700; }
+      header.site nav a { margin-right: 1rem; text-decoration: none; }
+      main { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+      .chip {
+        display: inline-block;
+        font-size: 0.75rem;
+        padding: 0.15rem 0.6rem;
+        border-radius: 999px;
+        background: rgba(110,168,254,0.15);
+        color: var(--accent);
+        border: 1px solid rgba(110,168,254,0.4);
+      }
+      .tags { margin: 0.5rem 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+      .tags li { font-size: 0.72rem; color: var(--muted); border: 1px solid var(--border); padding: 0.1rem 0.5rem; border-radius: 4px; }
+      h1 { margin: 0.6rem 0 0.3rem; line-height: 1.2; }
+      .desc { color: var(--muted); margin-top: 0; }
+      article :is(h2, h3) { margin-top: 2rem; }
+      article pre { background: #0b0d11; padding: 1rem; border-radius: 8px; overflow-x: auto; border: 1px solid var(--border); }
+      article code { background: #0b0d11; padding: 0.1rem 0.3rem; border-radius: 4px; }
+      article pre code { background: none; padding: 0; }
+      .grounding {
+        margin: 2rem 0;
+        padding: 1rem 1.25rem;
+        border-left: 4px solid var(--grounding);
+        background: rgba(255,180,84,0.08);
+        border-radius: 6px;
+      }
+      .grounding h3 { margin-top: 0; color: var(--grounding); }
+      .backlinks { margin-top: 2.5rem; border-top: 1px solid var(--border); padding-top: 1.5rem; }
+      .backlinks ul, .grounding ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+      .meta-type { display: flex; align-items: center; gap: 0.75rem; }
+    </style>
+  </head>
+  <body>
+    <header class="site">
+      <span class="brand">knowledge-bricks</span>
+      <nav>
+        <a href={withBase("/")}>Home</a>
+        <a href={withBase("/graph/")}>Graph</a>
+      </nav>
+    </header>
+    <main>
+      <div class="meta-type">
+        {type && <span class="chip">{type}</span>}
+      </div>
+      <h1>{title}</h1>
+      {description && <p class="desc">{description}</p>}
+      {tags.length > 0 && (
+        <ul class="tags">
+          {tags.map((t) => <li>#{t}</li>)}
+        </ul>
+      )}
+
+      {groundingU.length > 0 && (
+        <div class="grounding">
+          <h3>Grounding</h3>
+          <p>Philosophical foundations ↔ EOS operators connected to this concept:</p>
+          <ul>
+            {groundingU.map((n) => (
+              <li><a href={withBase(n.url)}>{n.label}</a> <span style="color:var(--muted)">({n.type})</span></li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      <article>
+        <slot />
+      </article>
+
+      {isConcept && (
+        <section class="backlinks">
+          <h3>Backlinks</h3>
+          {backlinksU.length > 0 ? (
+            <ul>
+              {backlinksU.map((n) => (
+                <li><a href={withBase(n.url)}>{n.label}</a></li>
+              ))}
+            </ul>
+          ) : (
+            <p style="color:var(--muted)">No concepts link here yet.</p>
+          )}
+        </section>
+      )}
+    </main>
+  </body>
+</html>

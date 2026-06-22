@@ -1,0 +1,6 @@
+tools/okf-to-astro/node_modules/
+tools/okf-to-astro/dist/
+tools/okf-to-astro/.astro/
+tools/okf-to-astro/src/content/bricks/
+tools/okf-to-astro/src/data/graph.json
+tools/okf-to-astro/public/graph.json

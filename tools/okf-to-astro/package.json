@@ -1,0 +1,18 @@
+{
+  "name": "okf-to-astro",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prepare:content": "node prepare.mjs",
+    "build": "node prepare.mjs && astro build",
+    "dev": "node prepare.mjs && astro dev",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.0.0",
+    "cytoscape": "^3.30.0",
+    "gray-matter": "^4.0.3",
+    "unist-util-visit": "^5.0.0"
+  }
+}

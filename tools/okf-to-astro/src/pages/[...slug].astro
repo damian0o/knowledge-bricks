@@ -1,0 +1,52 @@
+---
+import { getCollection, render } from "astro:content";
+import Brick from "../layouts/Brick.astro";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("bricks");
+  const paths = [];
+  for (const entry of entries) {
+    // entry.id is the path relative to the collection base, without extension,
+    // e.g. "philosophy/ancient/plato", "eos/index", "index", "log".
+    const rawId = entry.id;
+
+    // Root index.md is rendered by src/pages/index.astro -> skip here.
+    if (rawId === "index") continue;
+
+    const base = rawId.split("/").pop();
+    const isConcept = base !== "index" && base !== "log";
+
+    // Route slug: a directory index (e.g. "philosophy/ancient/index")
+    // collapses to its directory ("philosophy/ancient"). The root has been
+    // excluded above; "log" stays as "log".
+    let slug = rawId;
+    if (base === "index") {
+      slug = rawId.slice(0, -"/index".length);
+    }
+
+    paths.push({
+      params: { slug },
+      props: { entry, isConcept },
+    });
+  }
+  return paths;
+}
+
+const { entry, isConcept } = Astro.props;
+const { Content } = await render(entry);
+const fm = entry.data || {};
+
+const title =
+  fm.title || entry.id.split("/").pop() || entry.id;
+---
+
+<Brick
+  id={entry.id}
+  title={title}
+  type={fm.type}
+  tags={fm.tags || []}
+  description={fm.description}
+  isConcept={isConcept}
+>
+  <Content />
+</Brick>
