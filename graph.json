@@ -162,6 +162,41 @@
       "url": "/philosophy/ancient/stoics/"
     },
     {
+      "id": "philosophy/cross-cultural/advaita-vedanta",
+      "label": "Śaṅkara — Advaita Vedānta (Non-Dualism)",
+      "type": "Philosophical Model of Reality",
+      "cluster": "cross-cultural",
+      "url": "/philosophy/cross-cultural/advaita-vedanta/"
+    },
+    {
+      "id": "philosophy/cross-cultural/dependent-origination",
+      "label": "Pratītyasamutpāda — Dependent Origination",
+      "type": "Philosophical Model of Reality",
+      "cluster": "cross-cultural",
+      "url": "/philosophy/cross-cultural/dependent-origination/"
+    },
+    {
+      "id": "philosophy/cross-cultural/laozi",
+      "label": "Laozi — The Dao as Nameless Ground",
+      "type": "Philosophical Model of Reality",
+      "cluster": "cross-cultural",
+      "url": "/philosophy/cross-cultural/laozi/"
+    },
+    {
+      "id": "philosophy/cross-cultural/nagarjuna",
+      "label": "Nāgārjuna — Śūnyatā (Emptiness)",
+      "type": "Philosophical Model of Reality",
+      "cluster": "cross-cultural",
+      "url": "/philosophy/cross-cultural/nagarjuna/"
+    },
+    {
+      "id": "philosophy/cross-cultural/zhuangzi",
+      "label": "Zhuangzi — Dao as Transformation",
+      "type": "Philosophical Model of Reality",
+      "cluster": "cross-cultural",
+      "url": "/philosophy/cross-cultural/zhuangzi/"
+    },
+    {
       "id": "philosophy/empiricism-kant/bacon",
       "label": "Francis Bacon — Inductive Naturalism",
       "type": "Philosophical Model of Reality",
@@ -523,6 +558,11 @@
       "kind": "structural"
     },
     {
+      "source": "eos/axioms/no-fixed-grounding",
+      "target": "philosophy/cross-cultural/nagarjuna",
+      "kind": "grounding"
+    },
+    {
       "source": "eos/axioms/no-privileged-reference",
       "target": "eos/operators/o1-foundation",
       "kind": "structural"
@@ -655,6 +695,11 @@
     {
       "source": "eos/operators/o4-relationalization",
       "target": "philosophy/poststructuralist/latour",
+      "kind": "grounding"
+    },
+    {
+      "source": "eos/operators/o4-relationalization",
+      "target": "philosophy/cross-cultural/dependent-origination",
       "kind": "grounding"
     },
     {
@@ -970,6 +1015,131 @@
     {
       "source": "philosophy/ancient/stoics",
       "target": "philosophy/ancient/plotinus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/advaita-vedanta",
+      "target": "philosophy/ancient/plato",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/advaita-vedanta",
+      "target": "philosophy/empiricism-kant/berkeley",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/advaita-vedanta",
+      "target": "philosophy/ancient/plotinus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/advaita-vedanta",
+      "target": "philosophy/ancient/parmenides",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/advaita-vedanta",
+      "target": "philosophy/cross-cultural/nagarjuna",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/dependent-origination",
+      "target": "philosophy/cross-cultural/nagarjuna",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/dependent-origination",
+      "target": "philosophy/nineteenth-twentieth/quine",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/dependent-origination",
+      "target": "philosophy/poststructuralist/latour",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/dependent-origination",
+      "target": "philosophy/nineteenth-twentieth/whitehead",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/dependent-origination",
+      "target": "eos/operators/o4-relationalization",
+      "kind": "grounding"
+    },
+    {
+      "source": "philosophy/cross-cultural/laozi",
+      "target": "philosophy/ancient/plotinus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/laozi",
+      "target": "philosophy/ancient/heraclitus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/laozi",
+      "target": "philosophy/nineteenth-twentieth/wittgenstein",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/laozi",
+      "target": "philosophy/cross-cultural/zhuangzi",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/nagarjuna",
+      "target": "philosophy/cross-cultural/dependent-origination",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/nagarjuna",
+      "target": "philosophy/ancient/sextus-empiricus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/nagarjuna",
+      "target": "philosophy/poststructuralist/derrida",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/nagarjuna",
+      "target": "philosophy/nineteenth-twentieth/nietzsche",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/nagarjuna",
+      "target": "philosophy/cross-cultural/advaita-vedanta",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/nagarjuna",
+      "target": "eos/axioms/no-fixed-grounding",
+      "kind": "grounding"
+    },
+    {
+      "source": "philosophy/cross-cultural/zhuangzi",
+      "target": "philosophy/ancient/heraclitus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/zhuangzi",
+      "target": "philosophy/nineteenth-twentieth/whitehead",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/zhuangzi",
+      "target": "philosophy/nineteenth-twentieth/bergson",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/zhuangzi",
+      "target": "philosophy/nineteenth-twentieth/nietzsche",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/cross-cultural/zhuangzi",
+      "target": "philosophy/cross-cultural/laozi",
       "kind": "influence"
     },
     {
