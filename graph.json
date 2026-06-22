@@ -1,0 +1,1881 @@
+{
+  "nodes": [
+    {
+      "id": "eos/axioms/meaning-from-transformation",
+      "label": "Meaning emerges from transformations",
+      "type": "EOS Axiom",
+      "cluster": "eos",
+      "url": "/eos/axioms/meaning-from-transformation/"
+    },
+    {
+      "id": "eos/axioms/no-fixed-grounding",
+      "label": "Concepts have no fixed grounding",
+      "type": "EOS Axiom",
+      "cluster": "eos",
+      "url": "/eos/axioms/no-fixed-grounding/"
+    },
+    {
+      "id": "eos/axioms/no-privileged-reference",
+      "label": "No privileged reference system exists",
+      "type": "EOS Axiom",
+      "cluster": "eos",
+      "url": "/eos/axioms/no-privileged-reference/"
+    },
+    {
+      "id": "eos/dynamics",
+      "label": "EOS System Dynamics",
+      "type": "EOS Concept",
+      "cluster": "eos",
+      "url": "/eos/dynamics/"
+    },
+    {
+      "id": "eos/operators/o-meta",
+      "label": "O_META",
+      "type": "EOS Operator",
+      "cluster": "eos",
+      "url": "/eos/operators/o-meta/"
+    },
+    {
+      "id": "eos/operators/o1-foundation",
+      "label": "O1_FOUNDATION",
+      "type": "EOS Operator",
+      "cluster": "eos",
+      "url": "/eos/operators/o1-foundation/"
+    },
+    {
+      "id": "eos/operators/o2-internalization",
+      "label": "O2_INTERNALIZATION",
+      "type": "EOS Operator",
+      "cluster": "eos",
+      "url": "/eos/operators/o2-internalization/"
+    },
+    {
+      "id": "eos/operators/o3-linguistic-shift",
+      "label": "O3_LINGUISTIC_SHIFT",
+      "type": "EOS Operator",
+      "cluster": "eos",
+      "url": "/eos/operators/o3-linguistic-shift/"
+    },
+    {
+      "id": "eos/operators/o4-relationalization",
+      "label": "O4_RELATIONALIZATION",
+      "type": "EOS Operator",
+      "cluster": "eos",
+      "url": "/eos/operators/o4-relationalization/"
+    },
+    {
+      "id": "eos/operators/o5-de-referentialization",
+      "label": "O5_DE_REFERENTIALIZATION",
+      "type": "EOS Operator",
+      "cluster": "eos",
+      "url": "/eos/operators/o5-de-referentialization/"
+    },
+    {
+      "id": "eos/types/concept",
+      "label": "Concept",
+      "type": "EOS Type",
+      "cluster": "eos",
+      "url": "/eos/types/concept/"
+    },
+    {
+      "id": "eos/types/configuration",
+      "label": "Configuration",
+      "type": "EOS Type",
+      "cluster": "eos",
+      "url": "/eos/types/configuration/"
+    },
+    {
+      "id": "eos/types/operator",
+      "label": "Operator",
+      "type": "EOS Type",
+      "cluster": "eos",
+      "url": "/eos/types/operator/"
+    },
+    {
+      "id": "philosophy/ancient/aristotle",
+      "label": "Aristotle — Hylomorphism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "ancient",
+      "url": "/philosophy/ancient/aristotle/"
+    },
+    {
+      "id": "philosophy/ancient/atomists",
+      "label": "Democritus & Leucippus — Atomism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "ancient",
+      "url": "/philosophy/ancient/atomists/"
+    },
+    {
+      "id": "philosophy/ancient/epicurus",
+      "label": "Epicurus — Atomistic naturalism with the swerve",
+      "type": "Philosophical Model of Reality",
+      "cluster": "ancient",
+      "url": "/philosophy/ancient/epicurus/"
+    },
+    {
+      "id": "philosophy/ancient/heraclitus",
+      "label": "Heraclitus — Flux and the Logos",
+      "type": "Philosophical Model of Reality",
+      "cluster": "ancient",
+      "url": "/philosophy/ancient/heraclitus/"
+    },
+    {
+      "id": "philosophy/ancient/parmenides",
+      "label": "Parmenides — The Way of Truth (Eleatic monism)",
+      "type": "Philosophical Model of Reality",
+      "cluster": "ancient",
+      "url": "/philosophy/ancient/parmenides/"
+    },
+    {
+      "id": "philosophy/ancient/plato",
+      "label": "Plato — Theory of Forms",
+      "type": "Philosophical Model of Reality",
+      "cluster": "ancient",
+      "url": "/philosophy/ancient/plato/"
+    },
+    {
+      "id": "philosophy/ancient/plotinus",
+      "label": "Plotinus — Neoplatonic emanation",
+      "type": "Philosophical Model of Reality",
+      "cluster": "ancient",
+      "url": "/philosophy/ancient/plotinus/"
+    },
+    {
+      "id": "philosophy/ancient/pythagoras",
+      "label": "Pythagoras — All is Number",
+      "type": "Philosophical Model of Reality",
+      "cluster": "ancient",
+      "url": "/philosophy/ancient/pythagoras/"
+    },
+    {
+      "id": "philosophy/ancient/sextus-empiricus",
+      "label": "Sextus Empiricus — Pyrrhonian skepticism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "ancient",
+      "url": "/philosophy/ancient/sextus-empiricus/"
+    },
+    {
+      "id": "philosophy/ancient/stoics",
+      "label": "The Stoics — Corporeal cosmos governed by Logos",
+      "type": "Philosophical Model of Reality",
+      "cluster": "ancient",
+      "url": "/philosophy/ancient/stoics/"
+    },
+    {
+      "id": "philosophy/empiricism-kant/bacon",
+      "label": "Francis Bacon — Inductive Naturalism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "empiricism-kant",
+      "url": "/philosophy/empiricism-kant/bacon/"
+    },
+    {
+      "id": "philosophy/empiricism-kant/berkeley",
+      "label": "George Berkeley — Subjective Idealism (Immaterialism)",
+      "type": "Philosophical Model of Reality",
+      "cluster": "empiricism-kant",
+      "url": "/philosophy/empiricism-kant/berkeley/"
+    },
+    {
+      "id": "philosophy/empiricism-kant/hobbes",
+      "label": "Thomas Hobbes — Corporeal Materialism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "empiricism-kant",
+      "url": "/philosophy/empiricism-kant/hobbes/"
+    },
+    {
+      "id": "philosophy/empiricism-kant/hume",
+      "label": "David Hume — Skeptical Empiricism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "empiricism-kant",
+      "url": "/philosophy/empiricism-kant/hume/"
+    },
+    {
+      "id": "philosophy/empiricism-kant/kant",
+      "label": "Immanuel Kant — Transcendental Idealism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "empiricism-kant",
+      "url": "/philosophy/empiricism-kant/kant/"
+    },
+    {
+      "id": "philosophy/empiricism-kant/locke",
+      "label": "John Locke — Empiricism & the Veil of Ideas",
+      "type": "Philosophical Model of Reality",
+      "cluster": "empiricism-kant",
+      "url": "/philosophy/empiricism-kant/locke/"
+    },
+    {
+      "id": "philosophy/empiricism-kant/reid",
+      "label": "Thomas Reid — Common Sense Realism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "empiricism-kant",
+      "url": "/philosophy/empiricism-kant/reid/"
+    },
+    {
+      "id": "philosophy/medieval-rationalist/al-ghazali",
+      "label": "Al-Ghazali — Occasionalist contingency",
+      "type": "Philosophical Model of Reality",
+      "cluster": "medieval-rationalist",
+      "url": "/philosophy/medieval-rationalist/al-ghazali/"
+    },
+    {
+      "id": "philosophy/medieval-rationalist/anselm",
+      "label": "Anselm of Canterbury — Necessary divine being",
+      "type": "Philosophical Model of Reality",
+      "cluster": "medieval-rationalist",
+      "url": "/philosophy/medieval-rationalist/anselm/"
+    },
+    {
+      "id": "philosophy/medieval-rationalist/aquinas",
+      "label": "Thomas Aquinas — Being and the act of existence",
+      "type": "Philosophical Model of Reality",
+      "cluster": "medieval-rationalist",
+      "url": "/philosophy/medieval-rationalist/aquinas/"
+    },
+    {
+      "id": "philosophy/medieval-rationalist/augustine",
+      "label": "Augustine of Hippo — Christian Platonism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "medieval-rationalist",
+      "url": "/philosophy/medieval-rationalist/augustine/"
+    },
+    {
+      "id": "philosophy/medieval-rationalist/averroes",
+      "label": "Averroes (Ibn Rushd) — Purist Aristotelianism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "medieval-rationalist",
+      "url": "/philosophy/medieval-rationalist/averroes/"
+    },
+    {
+      "id": "philosophy/medieval-rationalist/avicenna",
+      "label": "Avicenna (Ibn Sina) — Necessary and contingent existence",
+      "type": "Philosophical Model of Reality",
+      "cluster": "medieval-rationalist",
+      "url": "/philosophy/medieval-rationalist/avicenna/"
+    },
+    {
+      "id": "philosophy/medieval-rationalist/descartes",
+      "label": "René Descartes — Substance dualism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "medieval-rationalist",
+      "url": "/philosophy/medieval-rationalist/descartes/"
+    },
+    {
+      "id": "philosophy/medieval-rationalist/duns-scotus",
+      "label": "John Duns Scotus — Univocity and haecceity",
+      "type": "Philosophical Model of Reality",
+      "cluster": "medieval-rationalist",
+      "url": "/philosophy/medieval-rationalist/duns-scotus/"
+    },
+    {
+      "id": "philosophy/medieval-rationalist/leibniz",
+      "label": "Gottfried Wilhelm Leibniz — Monadology",
+      "type": "Philosophical Model of Reality",
+      "cluster": "medieval-rationalist",
+      "url": "/philosophy/medieval-rationalist/leibniz/"
+    },
+    {
+      "id": "philosophy/medieval-rationalist/malebranche",
+      "label": "Nicolas Malebranche — Occasionalism and vision in God",
+      "type": "Philosophical Model of Reality",
+      "cluster": "medieval-rationalist",
+      "url": "/philosophy/medieval-rationalist/malebranche/"
+    },
+    {
+      "id": "philosophy/medieval-rationalist/ockham",
+      "label": "William of Ockham — Nominalism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "medieval-rationalist",
+      "url": "/philosophy/medieval-rationalist/ockham/"
+    },
+    {
+      "id": "philosophy/medieval-rationalist/spinoza",
+      "label": "Baruch Spinoza — Substance monism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "medieval-rationalist",
+      "url": "/philosophy/medieval-rationalist/spinoza/"
+    },
+    {
+      "id": "philosophy/nineteenth-twentieth/bergson",
+      "label": "Henri Bergson — Duration (Durée)",
+      "type": "Philosophical Model of Reality",
+      "cluster": "nineteenth-twentieth",
+      "url": "/philosophy/nineteenth-twentieth/bergson/"
+    },
+    {
+      "id": "philosophy/nineteenth-twentieth/hegel",
+      "label": "G.W.F. Hegel — Absolute Idealism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "nineteenth-twentieth",
+      "url": "/philosophy/nineteenth-twentieth/hegel/"
+    },
+    {
+      "id": "philosophy/nineteenth-twentieth/heidegger",
+      "label": "Martin Heidegger — Fundamental Ontology",
+      "type": "Philosophical Model of Reality",
+      "cluster": "nineteenth-twentieth",
+      "url": "/philosophy/nineteenth-twentieth/heidegger/"
+    },
+    {
+      "id": "philosophy/nineteenth-twentieth/husserl",
+      "label": "Edmund Husserl — Phenomenology",
+      "type": "Philosophical Model of Reality",
+      "cluster": "nineteenth-twentieth",
+      "url": "/philosophy/nineteenth-twentieth/husserl/"
+    },
+    {
+      "id": "philosophy/nineteenth-twentieth/james",
+      "label": "William James — Radical Empiricism & Pragmatism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "nineteenth-twentieth",
+      "url": "/philosophy/nineteenth-twentieth/james/"
+    },
+    {
+      "id": "philosophy/nineteenth-twentieth/mach",
+      "label": "Ernst Mach — Empiriocriticism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "nineteenth-twentieth",
+      "url": "/philosophy/nineteenth-twentieth/mach/"
+    },
+    {
+      "id": "philosophy/nineteenth-twentieth/marx",
+      "label": "Karl Marx — Dialectical & Historical Materialism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "nineteenth-twentieth",
+      "url": "/philosophy/nineteenth-twentieth/marx/"
+    },
+    {
+      "id": "philosophy/nineteenth-twentieth/nietzsche",
+      "label": "Friedrich Nietzsche — Perspectivism & Will to Power",
+      "type": "Philosophical Model of Reality",
+      "cluster": "nineteenth-twentieth",
+      "url": "/philosophy/nineteenth-twentieth/nietzsche/"
+    },
+    {
+      "id": "philosophy/nineteenth-twentieth/peirce",
+      "label": "Charles Sanders Peirce — Pragmaticism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "nineteenth-twentieth",
+      "url": "/philosophy/nineteenth-twentieth/peirce/"
+    },
+    {
+      "id": "philosophy/nineteenth-twentieth/putnam",
+      "label": "Hilary Putnam — Internal Realism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "nineteenth-twentieth",
+      "url": "/philosophy/nineteenth-twentieth/putnam/"
+    },
+    {
+      "id": "philosophy/nineteenth-twentieth/quine",
+      "label": "W.V.O. Quine — Ontological Relativity & Holism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "nineteenth-twentieth",
+      "url": "/philosophy/nineteenth-twentieth/quine/"
+    },
+    {
+      "id": "philosophy/nineteenth-twentieth/russell",
+      "label": "Bertrand Russell — Logical Atomism",
+      "type": "Philosophical Model of Reality",
+      "cluster": "nineteenth-twentieth",
+      "url": "/philosophy/nineteenth-twentieth/russell/"
+    },
+    {
+      "id": "philosophy/nineteenth-twentieth/schopenhauer",
+      "label": "Arthur Schopenhauer — The World as Will",
+      "type": "Philosophical Model of Reality",
+      "cluster": "nineteenth-twentieth",
+      "url": "/philosophy/nineteenth-twentieth/schopenhauer/"
+    },
+    {
+      "id": "philosophy/nineteenth-twentieth/whitehead",
+      "label": "Alfred North Whitehead — Process Philosophy",
+      "type": "Philosophical Model of Reality",
+      "cluster": "nineteenth-twentieth",
+      "url": "/philosophy/nineteenth-twentieth/whitehead/"
+    },
+    {
+      "id": "philosophy/nineteenth-twentieth/wittgenstein",
+      "label": "Ludwig Wittgenstein — Picture Theory & Language-Games",
+      "type": "Philosophical Model of Reality",
+      "cluster": "nineteenth-twentieth",
+      "url": "/philosophy/nineteenth-twentieth/wittgenstein/"
+    },
+    {
+      "id": "philosophy/physics-of-reality/bell",
+      "label": "John Stewart Bell — Nonlocality",
+      "type": "Philosophical Model of Reality",
+      "cluster": "physics-of-reality",
+      "url": "/philosophy/physics-of-reality/bell/"
+    },
+    {
+      "id": "philosophy/physics-of-reality/bohm",
+      "label": "David Bohm — Pilot-Wave and the Implicate Order",
+      "type": "Philosophical Model of Reality",
+      "cluster": "physics-of-reality",
+      "url": "/philosophy/physics-of-reality/bohm/"
+    },
+    {
+      "id": "philosophy/physics-of-reality/bohr",
+      "label": "Niels Bohr — Complementarity (Copenhagen)",
+      "type": "Philosophical Model of Reality",
+      "cluster": "physics-of-reality",
+      "url": "/philosophy/physics-of-reality/bohr/"
+    },
+    {
+      "id": "philosophy/physics-of-reality/einstein",
+      "label": "Albert Einstein — Relativity",
+      "type": "Philosophical Model of Reality",
+      "cluster": "physics-of-reality",
+      "url": "/philosophy/physics-of-reality/einstein/"
+    },
+    {
+      "id": "philosophy/physics-of-reality/everett",
+      "label": "Hugh Everett III — Many Worlds",
+      "type": "Philosophical Model of Reality",
+      "cluster": "physics-of-reality",
+      "url": "/philosophy/physics-of-reality/everett/"
+    },
+    {
+      "id": "philosophy/physics-of-reality/heisenberg",
+      "label": "Werner Heisenberg — Uncertainty and Potentia",
+      "type": "Philosophical Model of Reality",
+      "cluster": "physics-of-reality",
+      "url": "/philosophy/physics-of-reality/heisenberg/"
+    },
+    {
+      "id": "philosophy/physics-of-reality/measurement-problem",
+      "label": "The Measurement Problem — Quantum Interpretations",
+      "type": "Philosophical Model of Reality",
+      "cluster": "physics-of-reality",
+      "url": "/philosophy/physics-of-reality/measurement-problem/"
+    },
+    {
+      "id": "philosophy/physics-of-reality/newton",
+      "label": "Isaac Newton — Absolute Space and Time",
+      "type": "Philosophical Model of Reality",
+      "cluster": "physics-of-reality",
+      "url": "/philosophy/physics-of-reality/newton/"
+    },
+    {
+      "id": "philosophy/physics-of-reality/schrodinger",
+      "label": "Erwin Schrödinger — Wave Mechanics and the Cat",
+      "type": "Philosophical Model of Reality",
+      "cluster": "physics-of-reality",
+      "url": "/philosophy/physics-of-reality/schrodinger/"
+    },
+    {
+      "id": "philosophy/poststructuralist/deleuze",
+      "label": "Gilles Deleuze — Difference and Becoming",
+      "type": "Philosophical Model of Reality",
+      "cluster": "poststructuralist",
+      "url": "/philosophy/poststructuralist/deleuze/"
+    },
+    {
+      "id": "philosophy/poststructuralist/derrida",
+      "label": "Jacques Derrida — Deconstruction and Différance",
+      "type": "Philosophical Model of Reality",
+      "cluster": "poststructuralist",
+      "url": "/philosophy/poststructuralist/derrida/"
+    },
+    {
+      "id": "philosophy/poststructuralist/foucault",
+      "label": "Michel Foucault — Power/Knowledge and the Episteme",
+      "type": "Philosophical Model of Reality",
+      "cluster": "poststructuralist",
+      "url": "/philosophy/poststructuralist/foucault/"
+    },
+    {
+      "id": "philosophy/poststructuralist/latour",
+      "label": "Bruno Latour — Actor-Network Theory",
+      "type": "Philosophical Model of Reality",
+      "cluster": "poststructuralist",
+      "url": "/philosophy/poststructuralist/latour/"
+    }
+  ],
+  "edges": [
+    {
+      "source": "eos/axioms/meaning-from-transformation",
+      "target": "eos/axioms/no-fixed-grounding",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/axioms/meaning-from-transformation",
+      "target": "eos/axioms/no-privileged-reference",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/axioms/no-fixed-grounding",
+      "target": "eos/operators/o1-foundation",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/axioms/no-fixed-grounding",
+      "target": "eos/operators/o5-de-referentialization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/axioms/no-fixed-grounding",
+      "target": "eos/axioms/meaning-from-transformation",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/axioms/no-fixed-grounding",
+      "target": "eos/axioms/no-privileged-reference",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/axioms/no-privileged-reference",
+      "target": "eos/operators/o1-foundation",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/axioms/no-privileged-reference",
+      "target": "eos/operators/o5-de-referentialization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/axioms/no-privileged-reference",
+      "target": "eos/axioms/no-fixed-grounding",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/axioms/no-privileged-reference",
+      "target": "eos/axioms/meaning-from-transformation",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/dynamics",
+      "target": "eos/operators/o-meta",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/dynamics",
+      "target": "philosophy/poststructuralist/deleuze",
+      "kind": "grounding"
+    },
+    {
+      "source": "eos/dynamics",
+      "target": "eos/operators/o1-foundation",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/dynamics",
+      "target": "eos/operators/o5-de-referentialization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o-meta",
+      "target": "eos/operators/o5-de-referentialization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o-meta",
+      "target": "eos/operators/o1-foundation",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o-meta",
+      "target": "eos/operators/o2-internalization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o-meta",
+      "target": "eos/operators/o3-linguistic-shift",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o-meta",
+      "target": "eos/operators/o4-relationalization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o-meta",
+      "target": "eos/dynamics",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o1-foundation",
+      "target": "philosophy/empiricism-kant/kant",
+      "kind": "grounding"
+    },
+    {
+      "source": "eos/operators/o1-foundation",
+      "target": "eos/operators/o5-de-referentialization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o1-foundation",
+      "target": "eos/operators/o4-relationalization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o1-foundation",
+      "target": "eos/axioms/no-fixed-grounding",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o2-internalization",
+      "target": "eos/operators/o1-foundation",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o2-internalization",
+      "target": "eos/operators/o4-relationalization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o2-internalization",
+      "target": "eos/operators/o5-de-referentialization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o3-linguistic-shift",
+      "target": "philosophy/nineteenth-twentieth/wittgenstein",
+      "kind": "grounding"
+    },
+    {
+      "source": "eos/operators/o3-linguistic-shift",
+      "target": "philosophy/poststructuralist/deleuze",
+      "kind": "grounding"
+    },
+    {
+      "source": "eos/operators/o3-linguistic-shift",
+      "target": "eos/operators/o5-de-referentialization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o3-linguistic-shift",
+      "target": "eos/dynamics",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o4-relationalization",
+      "target": "philosophy/nineteenth-twentieth/quine",
+      "kind": "grounding"
+    },
+    {
+      "source": "eos/operators/o4-relationalization",
+      "target": "philosophy/poststructuralist/latour",
+      "kind": "grounding"
+    },
+    {
+      "source": "eos/operators/o4-relationalization",
+      "target": "eos/operators/o1-foundation",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o4-relationalization",
+      "target": "eos/operators/o2-internalization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o4-relationalization",
+      "target": "eos/dynamics",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o5-de-referentialization",
+      "target": "philosophy/poststructuralist/foucault",
+      "kind": "grounding"
+    },
+    {
+      "source": "eos/operators/o5-de-referentialization",
+      "target": "philosophy/poststructuralist/derrida",
+      "kind": "grounding"
+    },
+    {
+      "source": "eos/operators/o5-de-referentialization",
+      "target": "eos/operators/o1-foundation",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o5-de-referentialization",
+      "target": "eos/operators/o-meta",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/operators/o5-de-referentialization",
+      "target": "eos/operators/o3-linguistic-shift",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/types/concept",
+      "target": "eos/axioms/no-fixed-grounding",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/types/concept",
+      "target": "eos/types/operator",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/types/concept",
+      "target": "eos/operators/o4-relationalization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/types/configuration",
+      "target": "eos/types/operator",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/types/configuration",
+      "target": "eos/operators/o5-de-referentialization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/types/configuration",
+      "target": "eos/operators/o1-foundation",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/types/configuration",
+      "target": "eos/operators/o-meta",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/types/operator",
+      "target": "eos/types/concept",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/types/operator",
+      "target": "eos/operators/o1-foundation",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/types/operator",
+      "target": "eos/operators/o2-internalization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/types/operator",
+      "target": "eos/operators/o3-linguistic-shift",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/types/operator",
+      "target": "eos/operators/o4-relationalization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/types/operator",
+      "target": "eos/operators/o5-de-referentialization",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/types/operator",
+      "target": "eos/operators/o-meta",
+      "kind": "structural"
+    },
+    {
+      "source": "eos/types/operator",
+      "target": "eos/types/configuration",
+      "kind": "structural"
+    },
+    {
+      "source": "philosophy/ancient/aristotle",
+      "target": "philosophy/ancient/plato",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/aristotle",
+      "target": "philosophy/ancient/atomists",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/aristotle",
+      "target": "philosophy/ancient/plotinus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/aristotle",
+      "target": "philosophy/medieval-rationalist/avicenna",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/aristotle",
+      "target": "philosophy/medieval-rationalist/averroes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/aristotle",
+      "target": "philosophy/medieval-rationalist/aquinas",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/atomists",
+      "target": "philosophy/ancient/parmenides",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/atomists",
+      "target": "philosophy/ancient/plato",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/atomists",
+      "target": "philosophy/ancient/aristotle",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/atomists",
+      "target": "philosophy/ancient/epicurus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/epicurus",
+      "target": "philosophy/ancient/atomists",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/epicurus",
+      "target": "philosophy/ancient/plato",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/epicurus",
+      "target": "philosophy/ancient/stoics",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/heraclitus",
+      "target": "philosophy/ancient/parmenides",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/heraclitus",
+      "target": "philosophy/ancient/plato",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/heraclitus",
+      "target": "philosophy/ancient/stoics",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/parmenides",
+      "target": "philosophy/ancient/heraclitus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/parmenides",
+      "target": "philosophy/ancient/plato",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/parmenides",
+      "target": "philosophy/ancient/atomists",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/plato",
+      "target": "philosophy/ancient/parmenides",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/plato",
+      "target": "philosophy/ancient/heraclitus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/plato",
+      "target": "philosophy/ancient/pythagoras",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/plato",
+      "target": "philosophy/ancient/aristotle",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/plato",
+      "target": "philosophy/ancient/plotinus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/plotinus",
+      "target": "philosophy/ancient/plato",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/plotinus",
+      "target": "philosophy/ancient/aristotle",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/plotinus",
+      "target": "philosophy/ancient/pythagoras",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/plotinus",
+      "target": "philosophy/ancient/stoics",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/plotinus",
+      "target": "philosophy/medieval-rationalist/augustine",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/pythagoras",
+      "target": "philosophy/ancient/plato",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/pythagoras",
+      "target": "philosophy/ancient/plotinus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/sextus-empiricus",
+      "target": "philosophy/ancient/stoics",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/sextus-empiricus",
+      "target": "philosophy/ancient/epicurus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/sextus-empiricus",
+      "target": "philosophy/ancient/plato",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/sextus-empiricus",
+      "target": "philosophy/ancient/aristotle",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/sextus-empiricus",
+      "target": "philosophy/medieval-rationalist/descartes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/stoics",
+      "target": "philosophy/ancient/heraclitus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/stoics",
+      "target": "philosophy/ancient/plato",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/stoics",
+      "target": "philosophy/ancient/epicurus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/ancient/stoics",
+      "target": "philosophy/ancient/plotinus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/bacon",
+      "target": "philosophy/ancient/aristotle",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/bacon",
+      "target": "philosophy/empiricism-kant/hobbes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/bacon",
+      "target": "philosophy/empiricism-kant/locke",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/berkeley",
+      "target": "philosophy/empiricism-kant/locke",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/berkeley",
+      "target": "philosophy/empiricism-kant/hobbes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/berkeley",
+      "target": "philosophy/physics-of-reality/newton",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/berkeley",
+      "target": "philosophy/medieval-rationalist/malebranche",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/berkeley",
+      "target": "philosophy/empiricism-kant/hume",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/berkeley",
+      "target": "philosophy/empiricism-kant/kant",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/hobbes",
+      "target": "philosophy/empiricism-kant/bacon",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/hobbes",
+      "target": "philosophy/medieval-rationalist/descartes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/hobbes",
+      "target": "philosophy/empiricism-kant/locke",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/hume",
+      "target": "philosophy/empiricism-kant/locke",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/hume",
+      "target": "philosophy/empiricism-kant/berkeley",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/hume",
+      "target": "philosophy/medieval-rationalist/descartes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/hume",
+      "target": "philosophy/medieval-rationalist/leibniz",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/hume",
+      "target": "philosophy/empiricism-kant/kant",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/hume",
+      "target": "philosophy/empiricism-kant/reid",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/kant",
+      "target": "philosophy/empiricism-kant/hume",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/kant",
+      "target": "philosophy/medieval-rationalist/leibniz",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/kant",
+      "target": "philosophy/empiricism-kant/berkeley",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/kant",
+      "target": "philosophy/empiricism-kant/locke",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/kant",
+      "target": "philosophy/nineteenth-twentieth/hegel",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/kant",
+      "target": "eos/operators/o1-foundation",
+      "kind": "grounding"
+    },
+    {
+      "source": "philosophy/empiricism-kant/locke",
+      "target": "philosophy/medieval-rationalist/descartes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/locke",
+      "target": "philosophy/empiricism-kant/bacon",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/locke",
+      "target": "philosophy/empiricism-kant/hobbes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/locke",
+      "target": "philosophy/empiricism-kant/berkeley",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/locke",
+      "target": "philosophy/empiricism-kant/hume",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/locke",
+      "target": "philosophy/empiricism-kant/kant",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/reid",
+      "target": "philosophy/empiricism-kant/hume",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/reid",
+      "target": "philosophy/empiricism-kant/berkeley",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/empiricism-kant/reid",
+      "target": "philosophy/empiricism-kant/locke",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/al-ghazali",
+      "target": "philosophy/medieval-rationalist/avicenna",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/al-ghazali",
+      "target": "philosophy/medieval-rationalist/averroes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/al-ghazali",
+      "target": "philosophy/medieval-rationalist/malebranche",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/anselm",
+      "target": "philosophy/medieval-rationalist/augustine",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/anselm",
+      "target": "philosophy/medieval-rationalist/descartes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/anselm",
+      "target": "philosophy/medieval-rationalist/leibniz",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/aquinas",
+      "target": "philosophy/ancient/aristotle",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/aquinas",
+      "target": "philosophy/medieval-rationalist/augustine",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/aquinas",
+      "target": "philosophy/medieval-rationalist/avicenna",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/aquinas",
+      "target": "philosophy/medieval-rationalist/averroes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/aquinas",
+      "target": "philosophy/medieval-rationalist/duns-scotus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/aquinas",
+      "target": "philosophy/medieval-rationalist/ockham",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/augustine",
+      "target": "philosophy/ancient/plato",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/augustine",
+      "target": "philosophy/ancient/plotinus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/augustine",
+      "target": "philosophy/medieval-rationalist/anselm",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/augustine",
+      "target": "philosophy/medieval-rationalist/aquinas",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/augustine",
+      "target": "philosophy/medieval-rationalist/descartes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/averroes",
+      "target": "philosophy/ancient/aristotle",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/averroes",
+      "target": "philosophy/medieval-rationalist/al-ghazali",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/averroes",
+      "target": "philosophy/medieval-rationalist/avicenna",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/averroes",
+      "target": "philosophy/medieval-rationalist/aquinas",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/avicenna",
+      "target": "philosophy/ancient/aristotle",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/avicenna",
+      "target": "philosophy/ancient/plotinus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/avicenna",
+      "target": "philosophy/medieval-rationalist/aquinas",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/avicenna",
+      "target": "philosophy/medieval-rationalist/duns-scotus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/avicenna",
+      "target": "philosophy/medieval-rationalist/al-ghazali",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/descartes",
+      "target": "philosophy/medieval-rationalist/augustine",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/descartes",
+      "target": "philosophy/medieval-rationalist/anselm",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/descartes",
+      "target": "philosophy/medieval-rationalist/spinoza",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/descartes",
+      "target": "philosophy/medieval-rationalist/malebranche",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/descartes",
+      "target": "philosophy/medieval-rationalist/leibniz",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/descartes",
+      "target": "philosophy/empiricism-kant/locke",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/duns-scotus",
+      "target": "philosophy/medieval-rationalist/aquinas",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/duns-scotus",
+      "target": "philosophy/medieval-rationalist/avicenna",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/duns-scotus",
+      "target": "philosophy/medieval-rationalist/ockham",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/leibniz",
+      "target": "philosophy/medieval-rationalist/spinoza",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/leibniz",
+      "target": "philosophy/medieval-rationalist/descartes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/leibniz",
+      "target": "philosophy/ancient/aristotle",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/leibniz",
+      "target": "philosophy/physics-of-reality/newton",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/leibniz",
+      "target": "philosophy/empiricism-kant/kant",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/malebranche",
+      "target": "philosophy/medieval-rationalist/descartes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/malebranche",
+      "target": "philosophy/medieval-rationalist/augustine",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/malebranche",
+      "target": "philosophy/medieval-rationalist/al-ghazali",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/malebranche",
+      "target": "philosophy/medieval-rationalist/leibniz",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/malebranche",
+      "target": "philosophy/empiricism-kant/berkeley",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/malebranche",
+      "target": "philosophy/empiricism-kant/hume",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/ockham",
+      "target": "philosophy/medieval-rationalist/duns-scotus",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/ockham",
+      "target": "philosophy/medieval-rationalist/aquinas",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/ockham",
+      "target": "philosophy/ancient/plato",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/ockham",
+      "target": "philosophy/empiricism-kant/hobbes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/spinoza",
+      "target": "philosophy/medieval-rationalist/descartes",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/spinoza",
+      "target": "philosophy/medieval-rationalist/leibniz",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/medieval-rationalist/spinoza",
+      "target": "philosophy/nineteenth-twentieth/hegel",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/bergson",
+      "target": "philosophy/nineteenth-twentieth/james",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/bergson",
+      "target": "philosophy/physics-of-reality/einstein",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/bergson",
+      "target": "philosophy/nineteenth-twentieth/whitehead",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/hegel",
+      "target": "philosophy/empiricism-kant/kant",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/hegel",
+      "target": "philosophy/nineteenth-twentieth/schopenhauer",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/hegel",
+      "target": "philosophy/nineteenth-twentieth/marx",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/hegel",
+      "target": "philosophy/nineteenth-twentieth/nietzsche",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/heidegger",
+      "target": "philosophy/nineteenth-twentieth/husserl",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/heidegger",
+      "target": "philosophy/nineteenth-twentieth/nietzsche",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/husserl",
+      "target": "philosophy/nineteenth-twentieth/james",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/husserl",
+      "target": "philosophy/nineteenth-twentieth/heidegger",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/james",
+      "target": "philosophy/nineteenth-twentieth/peirce",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/james",
+      "target": "philosophy/nineteenth-twentieth/mach",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/james",
+      "target": "philosophy/nineteenth-twentieth/husserl",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/james",
+      "target": "philosophy/nineteenth-twentieth/bergson",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/james",
+      "target": "philosophy/nineteenth-twentieth/whitehead",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/james",
+      "target": "philosophy/nineteenth-twentieth/putnam",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/mach",
+      "target": "philosophy/medieval-rationalist/leibniz",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/mach",
+      "target": "philosophy/physics-of-reality/newton",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/mach",
+      "target": "philosophy/physics-of-reality/einstein",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/mach",
+      "target": "philosophy/nineteenth-twentieth/james",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/mach",
+      "target": "philosophy/nineteenth-twentieth/russell",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/marx",
+      "target": "philosophy/nineteenth-twentieth/hegel",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/nietzsche",
+      "target": "philosophy/nineteenth-twentieth/schopenhauer",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/nietzsche",
+      "target": "philosophy/nineteenth-twentieth/hegel",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/nietzsche",
+      "target": "philosophy/nineteenth-twentieth/heidegger",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/nietzsche",
+      "target": "philosophy/nineteenth-twentieth/bergson",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/peirce",
+      "target": "philosophy/empiricism-kant/kant",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/peirce",
+      "target": "philosophy/nineteenth-twentieth/james",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/peirce",
+      "target": "philosophy/nineteenth-twentieth/putnam",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/putnam",
+      "target": "philosophy/nineteenth-twentieth/quine",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/putnam",
+      "target": "philosophy/nineteenth-twentieth/james",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/putnam",
+      "target": "philosophy/nineteenth-twentieth/peirce",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/putnam",
+      "target": "philosophy/nineteenth-twentieth/wittgenstein",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/quine",
+      "target": "philosophy/nineteenth-twentieth/james",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/quine",
+      "target": "eos/operators/o4-relationalization",
+      "kind": "grounding"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/russell",
+      "target": "philosophy/nineteenth-twentieth/whitehead",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/russell",
+      "target": "philosophy/nineteenth-twentieth/mach",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/russell",
+      "target": "philosophy/nineteenth-twentieth/wittgenstein",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/schopenhauer",
+      "target": "philosophy/empiricism-kant/kant",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/schopenhauer",
+      "target": "philosophy/nineteenth-twentieth/hegel",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/schopenhauer",
+      "target": "philosophy/nineteenth-twentieth/nietzsche",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/schopenhauer",
+      "target": "philosophy/nineteenth-twentieth/bergson",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/whitehead",
+      "target": "philosophy/nineteenth-twentieth/bergson",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/whitehead",
+      "target": "philosophy/nineteenth-twentieth/james",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/whitehead",
+      "target": "philosophy/nineteenth-twentieth/russell",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/wittgenstein",
+      "target": "philosophy/nineteenth-twentieth/russell",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/wittgenstein",
+      "target": "philosophy/nineteenth-twentieth/putnam",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/nineteenth-twentieth/wittgenstein",
+      "target": "eos/operators/o3-linguistic-shift",
+      "kind": "grounding"
+    },
+    {
+      "source": "philosophy/physics-of-reality/bell",
+      "target": "philosophy/physics-of-reality/bohm",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/bell",
+      "target": "philosophy/physics-of-reality/bohr",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/bell",
+      "target": "philosophy/physics-of-reality/einstein",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/bohm",
+      "target": "philosophy/physics-of-reality/bohr",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/bohm",
+      "target": "philosophy/physics-of-reality/einstein",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/bohm",
+      "target": "philosophy/physics-of-reality/bell",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/bohr",
+      "target": "philosophy/physics-of-reality/einstein",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/bohr",
+      "target": "philosophy/physics-of-reality/heisenberg",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/bohr",
+      "target": "philosophy/physics-of-reality/schrodinger",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/bohr",
+      "target": "philosophy/physics-of-reality/everett",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/bohr",
+      "target": "philosophy/physics-of-reality/bohm",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/bohr",
+      "target": "philosophy/physics-of-reality/bell",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/einstein",
+      "target": "philosophy/physics-of-reality/newton",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/einstein",
+      "target": "philosophy/nineteenth-twentieth/mach",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/einstein",
+      "target": "philosophy/medieval-rationalist/leibniz",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/einstein",
+      "target": "philosophy/physics-of-reality/bohr",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/everett",
+      "target": "philosophy/physics-of-reality/bohr",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/everett",
+      "target": "philosophy/physics-of-reality/schrodinger",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/everett",
+      "target": "philosophy/physics-of-reality/heisenberg",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/heisenberg",
+      "target": "philosophy/physics-of-reality/bohr",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/heisenberg",
+      "target": "philosophy/physics-of-reality/einstein",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/measurement-problem",
+      "target": "philosophy/physics-of-reality/bohr",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/measurement-problem",
+      "target": "philosophy/physics-of-reality/everett",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/measurement-problem",
+      "target": "philosophy/physics-of-reality/bohm",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/measurement-problem",
+      "target": "philosophy/physics-of-reality/bell",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/newton",
+      "target": "philosophy/medieval-rationalist/leibniz",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/newton",
+      "target": "philosophy/physics-of-reality/einstein",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/schrodinger",
+      "target": "philosophy/physics-of-reality/bohr",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/schrodinger",
+      "target": "philosophy/physics-of-reality/heisenberg",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/physics-of-reality/schrodinger",
+      "target": "philosophy/physics-of-reality/everett",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/poststructuralist/deleuze",
+      "target": "philosophy/nineteenth-twentieth/nietzsche",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/poststructuralist/deleuze",
+      "target": "philosophy/nineteenth-twentieth/bergson",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/poststructuralist/deleuze",
+      "target": "philosophy/medieval-rationalist/spinoza",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/poststructuralist/deleuze",
+      "target": "eos/operators/o3-linguistic-shift",
+      "kind": "grounding"
+    },
+    {
+      "source": "philosophy/poststructuralist/deleuze",
+      "target": "eos/dynamics",
+      "kind": "grounding"
+    },
+    {
+      "source": "philosophy/poststructuralist/derrida",
+      "target": "philosophy/nineteenth-twentieth/husserl",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/poststructuralist/derrida",
+      "target": "philosophy/nineteenth-twentieth/heidegger",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/poststructuralist/derrida",
+      "target": "philosophy/nineteenth-twentieth/nietzsche",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/poststructuralist/derrida",
+      "target": "eos/operators/o5-de-referentialization",
+      "kind": "grounding"
+    },
+    {
+      "source": "philosophy/poststructuralist/derrida",
+      "target": "eos/operators/o1-foundation",
+      "kind": "grounding"
+    },
+    {
+      "source": "philosophy/poststructuralist/foucault",
+      "target": "philosophy/nineteenth-twentieth/nietzsche",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/poststructuralist/foucault",
+      "target": "philosophy/nineteenth-twentieth/heidegger",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/poststructuralist/foucault",
+      "target": "eos/operators/o5-de-referentialization",
+      "kind": "grounding"
+    },
+    {
+      "source": "philosophy/poststructuralist/foucault",
+      "target": "eos/operators/o1-foundation",
+      "kind": "grounding"
+    },
+    {
+      "source": "philosophy/poststructuralist/latour",
+      "target": "philosophy/nineteenth-twentieth/quine",
+      "kind": "influence"
+    },
+    {
+      "source": "philosophy/poststructuralist/latour",
+      "target": "eos/operators/o4-relationalization",
+      "kind": "grounding"
+    }
+  ]
+}
